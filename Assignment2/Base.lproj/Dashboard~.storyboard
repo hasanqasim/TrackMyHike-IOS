@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wte-xf-4lb">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="a1c-jn-5YM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SB0-Ha-T3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Vo0-HJ-ymH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jXX-Sm-5yw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xYY-bu-SLB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Eqb-eZ-bm4"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="475" y="376"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="GHV-el-hFs">
+            <objects>
+                <viewController id="pW1-wB-Xcx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ym0-MW-ytq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="ss5-ER-2rf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="fDX-Nq-fDD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3C-Kz-PkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475" y="-272"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kp7-QF-kOA">
+            <objects>
+                <tabBarController id="wte-xf-4lb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NyF-8E-J7F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="0.047067561619718312" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pW1-wB-Xcx" kind="relationship" relationship="viewControllers" id="BLE-wf-PS7"/>
+                        <segue destination="Vo0-HJ-ymH" kind="relationship" relationship="viewControllers" id="5TS-bs-sBu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kO-FL-I8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-443" y="52"/>
+        </scene>
+    </scenes>
+</document>
